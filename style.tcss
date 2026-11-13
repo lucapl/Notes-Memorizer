@@ -1,0 +1,53 @@
+Grid {
+    /* Define 3 columns and 2 rows */
+    grid-size: 2 2;
+    /* Gaps between cells */
+    grid-gutter: 1 2;
+    /* Column widths: fractional, fixed, fractional */
+    grid-columns: 1fr 2fr  ;
+    /* Row heights: 2 rows of 4 units */
+    grid-rows: 2fr 4fr;
+}
+Screen {
+    background: $background;
+    align: center middle;
+}
+.clock {
+    width: 100%;
+    background: $surface;
+    border: ascii $background;
+    color: $background;
+    &.success {
+        background: $success;
+    }
+    &.running {
+        background: $error;
+    }
+}
+#notes {
+    # background: $surface;
+    # color: $primary;
+    width: auto;
+    height: auto;
+}
+#notes-container {
+    background: $surface;
+    border: ascii $primary;
+    row-span: 2;
+    content-align: center middle;
+}
+#string {
+    background: $panel;
+    color: $primary;
+    text-align: center;
+    text-style: bold;
+    width: auto;
+    height: auto;
+}
+#string-container {
+    background: $surface;
+    border: ascii $primary;
+    align: center middle;
+    width: 100%;
+    height: 100%;
+}
